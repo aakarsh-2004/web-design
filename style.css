@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.gradient-background {
+    background: linear-gradient(300deg, #eb4217, #ff8c20, #ff1111);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    height: 1500px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    font-family: 'Chivo Mono', monospace;
+}
+.second {
+    font-family: 'Sacramento', cursive;
+    font-size: 120px;
+    font-weight: bolder;
+}
+span {
+    color: rgb(1, 1, 71);
+    transition: all 0.5s ease;
+}
+span:hover {
+    color: rgb(44, 44, 145);
+    text-shadow: 2px 2px 10px black ;
+}
+.main-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.c-img {
+    height: 150px;
+    position: absolute;
+}
+.one {
+    left: 40px;
+    animation: first 5s infinite;
+}
+@keyframes first {
+    0% {
+        left: 40px;
+    }
+    50% {
+        left: 0px;
+    }
+    100% {
+        left: 40px;
+    }
+}
+.two {
+    right: 10px;
+    top: 50px;
+    animation: second 5s 2s infinite;
+}
+@keyframes second {
+    0% {
+        right: 10px;
+    }
+    50% {
+        right: 50px;
+    }
+    100% {
+        right: 10px;
+    }
+}
+
+.three {
+    left: 30%;
+    top: 50px;
+    animation: third 8s 4s infinite;
+}
+@keyframes third {
+    0% {
+        left: 30%;
+    }
+    50% {
+        left: 20%;
+    }
+    100% {
+        left: 30%;
+    }
+}
+
+.four {
+    margin-top: 650px;
+    /* bottom: 30px; */
+    height: 500px;
+}
+
+.one {
+    height: 150px;
+    transition: all 0.5s ease;
+}
+
+.one:hover {
+    height: 170px;
+}
+.two {
+    height: 150px;
+    transition: all 0.5s ease;
+}
+
+.two:hover {
+    height: 170px;
+}
+.three {
+    height: 150px;
+    transition: all 0.5s ease;
+}
+
+.three:hover {
+    height: 170px;
+}
+
+.four {
+    height: 500px;
+    transition: all 0.5s ease;
+}
+
+.four:hover {
+    height: 550px;
+}
